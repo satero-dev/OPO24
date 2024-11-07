@@ -42,18 +42,18 @@
                     <label for="allThemes">Tots els temes</label>
                 </div>
             </div>
-            <label for="numQuestions">Número de preguntas:</label>
+            <label for="numQuestions">Número de preguntes:</label>
             <input type="number" id="numQuestions" min="1" max="73" value="10">
             <button onclick="startQuiz()">Iniciar Quiz</button>
         </div>
 
         <div id="quiz" style="display: none;">
-            <div class="timer" id="timer">Tiempo: 00:00</div>
-            <div class="progress" id="progress">Progreso: 0 / 0</div>
+            <div class="timer" id="timer">Temps: 00:00</div>
+            <div class="progress" id="progress">Progrés: 0 / 0</div>
             <div class="question" id="ques"></div>
             <div class="options" id="opt"></div>
-            <button onclick="checkAnswer()" id="confirmBtn">Confirmar Respuesta</button>
-            <button onclick="nextQuestion()" id="nextBtn" style="display: none;">Siguiente</button>
+            <button onclick="checkAnswer()" id="confirmBtn">Confirmar Resposta</button>
+            <button onclick="nextQuestion()" id="nextBtn" style="display: none;">Següent</button>
             <div id="score"></div>
         </div>
     </div>
