@@ -16,6 +16,7 @@ body {
   max-width: 600px;
   width: 90%;
   text-align: left;
+  position: relative;
 }
 
 h1 {
@@ -32,6 +33,32 @@ h1 {
   margin-bottom: 10px;
 }
 
+.theme-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.theme-selection div {
+  display: flex;
+  align-items: center;
+}
+
+.theme-selection input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #007bff;
+}
+
+.theme-selection label {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
 .question {
   font-size: 18px;
   color: #444;
@@ -39,14 +66,12 @@ h1 {
   padding: 10px;
   background-color: #f1f1f1;
   border-radius: 5px;
-  text-align: left;
 }
 
 .options {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  text-align: left;
 }
 
 .options div {
@@ -55,12 +80,17 @@ h1 {
   background-color: #e8f0fe;
   border-radius: 5px;
   padding: 10px;
-  cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .options input[type="radio"] {
   margin-right: 10px;
+}
+
+.options label {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
 }
 
 .options div:hover {
@@ -83,8 +113,45 @@ button:hover {
   background-color: #0056b3;
 }
 
+#confirmBtn {
+  margin-right: 10px;
+}
+
 #score {
   margin-top: 20px;
   font-size: 18px;
   color: #007bff;
+}
+
+/* Scoreboard align to the right */
+.scoreboard-right {
+  position: absolute;
+  right: 30px;
+  top: 80px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#errors,
+#accuracy {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+#errors {
+  margin-bottom: 5px; /* Espacio para separar los textos */
+}
+
+/* Feedback de respuesta correcta o incorrecta */
+.options label[style*="background-color: lightgreen"] {
+  background-color: #d4edda !important;
+  color: #155724;
+}
+
+.options label[style*="background-color: lightcoral"] {
+  background-color: #f8d7da !important;
+  color: #721c24;
 }

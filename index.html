@@ -6,25 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="Questions_word.js"></script>
     <script src="Questions_Complete.js"></script>
     <script src="script.js" defer></script>
 </head>
 
 <body>
     <div class="panel">
-        <h1>Quiz Application</h1>
+        <h1 id="mainTitle">Test Oposicions 2024</h1>
         <div id="setup">
-            <label for="numQuestions">Selecciona el número de preguntas:</label>
+            <label>Selecciona el tema:</label>
+            <div class="theme-selection">
+                <div>
+                    <input type="radio" name="tema" id="tema1" value="Tema 1">
+                    <label for="tema1">Marc Constitucional i Estatutari</label>
+                </div>
+                <div>
+                    <input type="radio" name="tema" id="tema2" value="Tema 2">
+                    <label for="tema2">El Sistema Sanitari Català</label>
+                </div>
+                <div>
+                    <input type="radio" name="tema" id="tema3" value="Tema 3">
+                    <label for="tema3">El Consorci Corporació Sanitària Parc Taulí</label>
+                </div>
+                <div>
+                    <input type="radio" name="tema" id="tema4" value="Tema 4">
+                    <label for="tema4">Confidencialitat i Protecció de Dades</label>
+                </div>
+                <div>
+                    <input type="radio" name="tema" id="tema5" value="Tema 5">
+                    <label for="tema5">Normativa de Prevenció de Riscos Laborals</label>
+                </div>
+                <div>
+                    <input type="radio" name="tema" id="allThemes" value="allThemes">
+                    <label for="allThemes">Todos los temas</label>
+                </div>
+            </div>
+            <label for="numQuestions">Número de preguntas:</label>
             <input type="number" id="numQuestions" min="1" max="73" value="10">
             <button onclick="startQuiz()">Iniciar Quiz</button>
         </div>
+
         <div id="quiz" style="display: none;">
             <div class="timer" id="timer">Tiempo: 00:00</div>
             <div class="progress" id="progress">Progreso: 0 / 0</div>
             <div class="question" id="ques"></div>
             <div class="options" id="opt"></div>
-            <button onclick="prevQuestion()" id="prevBtn" style="display: none;">Atrás</button>
-            <button onclick="nextQuestion()" id="nextBtn">Siguiente</button>
+            <button onclick="checkAnswer()" id="confirmBtn">Confirmar Respuesta</button>
+            <button onclick="nextQuestion()" id="nextBtn" style="display: none;">Siguiente</button>
             <div id="score"></div>
         </div>
     </div>

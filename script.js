@@ -1,3 +1,4 @@
+const mainTitle = document.getElementById("mainTitle");
 const ques = document.getElementById("ques");
 const opt = document.getElementById("opt");
 const progress = document.getElementById("progress");
@@ -6,22 +7,59 @@ const timer = document.getElementById("timer");
 let currQuestion = 0;
 let score = 0;
 let selectedQuestions = [];
+let totalQuestions = 10;
 let timeElapsed = 0;
 let quizInterval;
-let totalQuestions = 10; // Default value
 
 function startQuiz() {
-  // Obtenemos el número de preguntas
+  const theme = getSelectedTheme();
   totalQuestions = parseInt(document.getElementById("numQuestions").value);
-  selectedQuestions = shuffleQuestions(Questions).slice(0, totalQuestions);
+
+  // Cambiar el título principal al nombre del tema seleccionado
+  mainTitle.textContent = getThemeName(theme);
+
+  // Filtrar preguntas por tema
+  const filteredQuestions =
+    theme && theme !== "allThemes"
+      ? Questions.filter((q) => q.category === theme)
+      : Questions;
+
+  selectedQuestions = shuffleQuestions(filteredQuestions).slice(
+    0,
+    totalQuestions
+  );
   document.getElementById("setup").style.display = "none";
   document.getElementById("quiz").style.display = "block";
 
-  // Iniciamos el temporizador
+  // Iniciar temporizador
   timeElapsed = 0;
   quizInterval = setInterval(updateTimer, 1000);
   loadQues();
   updateProgress();
+}
+
+function getSelectedTheme() {
+  const selectedRadio = document.querySelector('input[name="tema"]:checked');
+  return selectedRadio ? selectedRadio.value : null;
+}
+
+function getThemeName(theme) {
+  switch (theme) {
+    case "Tema 1":
+      return "Marc Constitucional i Estatutari";
+    case "Tema 2":
+      return "El Sistema Sanitari Català";
+    case "Tema 3":
+      return "El Consorci Corporació Sanitària Parc Taulí";
+    case "Tema 4":
+      return "Confidencialitat i Protecció de Dades";
+    case "Tema 5":
+      return "Normativa de Prevenció de Riscos Laborals";
+    case "allThemes":
+      return "Todos los temas";
+    default:
+      return "Test Oposicions 2024";
+  }
 }
 
 function shuffleQuestions(array) {
@@ -35,6 +73,7 @@ function shuffleQuestions(array) {
 function loadQues() {
   const currentQuestion = selectedQuestions[currQuestion];
   ques.innerText = currentQuestion.question;
+  ques.style.backgroundColor = ""; // Reset background color
   opt.innerHTML = "";
 
   const options = [
@@ -51,19 +90,43 @@ function loadQues() {
     choice.type = "radio";
     choice.name = "answer";
     choice.value = option;
-    choice.checked = selectedQuestions[currQuestion].selectedAnswer === option;
 
     choiceLabel.textContent = option;
     choiceLabel.prepend(choice);
 
-    choice.onclick = () =>
-      (selectedQuestions[currQuestion].selectedAnswer = option);
-
     choicesdiv.appendChild(choiceLabel);
     opt.appendChild(choicesdiv);
   });
+
+  document.getElementById("confirmBtn").style.display = "inline-block";
+  document.getElementById("nextBtn").style.display = "none";
   updateProgress();
-  updateNavButtons();
+}
+
+function checkAnswer() {
+  const selectedAnswer = document.querySelector('input[name="answer"]:checked');
+  const currentQuestion = selectedQuestions[currQuestion];
+
+  if (!selectedAnswer) return;
+
+  const isCorrect = selectedAnswer.value === currentQuestion.correct_answer;
+
+  // Mostrar respuesta correcta en verde y la incorrecta seleccionada en rojo
+  const options = opt.querySelectorAll("label");
+  options.forEach((option) => {
+    if (option.innerText === currentQuestion.correct_answer) {
+      option.style.backgroundColor = "lightgreen";
+    } else if (selectedAnswer.value === option.innerText) {
+      option.style.backgroundColor = "lightcoral";
+    }
+  });
+
+  // Contabilizar puntaje si es correcta
+  if (isCorrect) score++;
+
+  // Mostrar botón siguiente
+  document.getElementById("confirmBtn").style.display = "none";
+  document.getElementById("nextBtn").style.display = "inline-block";
 }
 
 function nextQuestion() {
@@ -75,30 +138,16 @@ function nextQuestion() {
   }
 }
 
-function prevQuestion() {
-  if (currQuestion > 0) {
-    currQuestion--;
-    loadQues();
-  }
-}
-
 function endQuiz() {
   clearInterval(quizInterval);
   document.getElementById("opt").remove();
   document.getElementById("ques").remove();
+  document.getElementById("confirmBtn").remove();
   document.getElementById("nextBtn").remove();
-  document.getElementById("prevBtn").remove();
   document.getElementById("timer").remove();
-  calculateScore();
   document.getElementById(
     "score"
   ).textContent = `Puntuación: ${score} de ${totalQuestions}`;
-}
-
-function calculateScore() {
-  score = selectedQuestions.filter(
-    (q) => q.selectedAnswer === q.correct_answer
-  ).length;
 }
 
 function updateProgress() {
@@ -110,11 +159,4 @@ function updateTimer() {
   const minutes = String(Math.floor(timeElapsed / 60)).padStart(2, "0");
   const seconds = String(timeElapsed % 60).padStart(2, "0");
   timer.textContent = `Tiempo: ${minutes}:${seconds}`;
-}
-
-function updateNavButtons() {
-  document.getElementById("prevBtn").style.display =
-    currQuestion > 0 ? "inline-block" : "none";
-  document.getElementById("nextBtn").textContent =
-    currQuestion < selectedQuestions.length - 1 ? "Siguiente" : "Finalizar";
 }

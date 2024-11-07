@@ -1,6 +1,6 @@
 let Questions = [
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 5",
     "type": "multiple",
     "question": "1. El “Instituto Nacional de Previsión” va ser la primera institució oficial encarregada de la seguretat social i l’assistència sanitària a Espanya. A quin any va ser creat?",
     "correct_answer": "A l’any 1908, durant el regnat d’Alfons XIII.",
@@ -84,7 +84,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 5",
     "type": "multiple",
     "question": "9. Quina entitat va agrupar els hospitals de la Seguretat Social que es van transferir a Catalunya a l’any 1981?",
     "correct_answer": "L’Institut Català de la Salut (ICS).",
@@ -104,7 +104,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 2",
     "type": "multiple",
     "question": "11. Actualment l’Institut Català de la Salut (ICS) quina funció té?",
     "correct_answer": "Funció de prestació de serveis sanitaris públics.",
@@ -124,7 +124,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 2",
     "type": "multiple",
     "question": "13. A quin any va néixer el Sistema sanitari integral d’utilització pública de Catalunya, (SISCAT)?",
     "correct_answer": "A l’any 2000.",
@@ -154,7 +154,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 2",
     "type": "multiple",
     "question": "16. L’Institut Català de la Salut (ICS) i el Servei Català de la Salut (CatSalut) són la mateixa entitat?",
     "correct_answer": "Sí, són la mateixa entitat, però són dos formes distintes d’anomenar-les.",
@@ -166,7 +166,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 2",
     "type": "multiple",
     "question": "16. L’Institut Català de la Salut (ICS) i el Servei Català de la Salut (CatSalut) són la mateixa entitat?",
     "correct_answer": "Sí, són la mateixa entitat, però són dos formes distintes d’anomenar-les.",
@@ -198,7 +198,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 3",
     "type": "multiple",
     "question": "20. A quin any es va crear el Consorci Hospitalari del Parc Taulí?",
     "correct_answer": "Es va crear a l’any 1986.",
@@ -208,7 +208,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 3",
     "type": "multiple",
     "question": "21. Quina de les següents entitats no va ser entitat fundadora, del Consorci Hospitalari del Parc Taulí?",
     "correct_answer": "El Banc de Sabadell.",
@@ -218,7 +218,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 3",
     "type": "multiple",
     "question": "22. Quines entitats formen part, en l’actualitat, com a membres del Consell de Govern del Consorci Corporació Sanitària Parc Taulí de Sabadell ?",
     "correct_answer": "La Generalitat de Catalunya, l'Ajuntament de Sabadell i la Universitat Autònoma de Barcelona (UAB).",
@@ -228,7 +228,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 2",
     "type": "multiple",
     "question": "23. El Consorci Corporació Sanitària Parc Taulí de Sabadell, és una entitat proveïdora d’atenció primària del Servei Català de la Salut (CatSalut)?",
     "correct_answer": "Medicina de la Universitat Autònoma de Barcelona (UAB) i té la consideració d’Hospital Universitari.",
@@ -238,7 +238,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 2",
     "type": "multiple",
     "question": "23. El Consorci Corporació Sanitària Parc Taulí de Sabadell, és una entitat proveïdora d’atenció primària del Servei Català de la Salut (CatSalut)?",
     "correct_answer": "Medicina de la Universitat Autònoma de Barcelona (UAB) i té la consideració d’Hospital Universitari.",
@@ -248,7 +248,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 2",
     "type": "multiple",
     "question": "23. El Consorci Corporació Sanitària Parc Taulí de Sabadell, és una entitat proveïdora d’atenció primària del Servei Català de la Salut (CatSalut)?",
     "correct_answer": "Medicina de la Universitat Autònoma de Barcelona (UAB) i té la consideració d’Hospital Universitari.",
@@ -258,7 +258,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 2",
     "type": "multiple",
     "question": "23. El Consorci Corporació Sanitària Parc Taulí de Sabadell, és una entitat proveïdora d’atenció primària del Servei Català de la Salut (CatSalut)?",
     "correct_answer": "Medicina de la Universitat Autònoma de Barcelona (UAB) i té la consideració d’Hospital Universitari.",
@@ -268,7 +268,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 2",
     "type": "multiple",
     "question": "23. El Consorci Corporació Sanitària Parc Taulí de Sabadell, és una entitat proveïdora d’atenció primària del Servei Català de la Salut (CatSalut)?",
     "correct_answer": "Medicina de la Universitat Autònoma de Barcelona (UAB) i té la consideració d’Hospital Universitari.",
@@ -278,7 +278,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 2",
     "type": "multiple",
     "question": "23. El Consorci Corporació Sanitària Parc Taulí de Sabadell, és una entitat proveïdora d’atenció primària del Servei Català de la Salut (CatSalut)?",
     "correct_answer": "Medicina de la Universitat Autònoma de Barcelona (UAB) i té la consideració d’Hospital Universitari.",
@@ -288,7 +288,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 3",
     "type": "multiple",
     "question": "29. Quins són els objectius dels principis d’atenció centrada en el pacient del Consorci Corporació Sanitària Parc Taulí de Sabadell?",
     "correct_answer": "Tractem als pacients i als familiars com a persones adultes.",
@@ -298,7 +298,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 3",
     "type": "multiple",
     "question": "30. Qui nomena als membres del Consell d’Administració de Sabadell Gent Gran Centre de Serveis, SAU ?",
     "correct_answer": "Són nomenats pel Consorci Corporació Sanitària Parc Taulí de Sabadell.",
@@ -308,7 +308,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 3",
     "type": "multiple",
     "question": "31. Quin és el màxim òrgan de govern del Consorci Corporació Sanitària Parc Taulí de Sabadell?",
     "correct_answer": "El Consell de Govern.",
@@ -318,7 +318,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 3",
     "type": "multiple",
     "question": "32. Quin és el màxim òrgan de Govern de la Fundació Parc Taulí ?",
     "correct_answer": "El Patronat de la Fundació Parc Taulí.",
@@ -328,7 +328,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 3",
     "type": "multiple",
     "question": "33. Qui exerceix la màxima potestat executiva, al Consorci Corporació Sanitària Parc Taulí de Sabadell i a la resta d’entitats vinculades, a través de la seva estructura directiva i organitzativa?",
     "correct_answer": "El Comitè de Direcció del Consorci Corporació Sanitària Parc Taulí de Sabadell.",
@@ -338,7 +338,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 3",
     "type": "multiple",
     "question": "33. Qui exerceix la màxima potestat executiva, al Consorci Corporació Sanitària Parc Taulí de Sabadell i a la resta d’entitats vinculades, a través de la seva estructura directiva i organitzativa?",
     "correct_answer": "El Comitè de Direcció del Consorci Corporació Sanitària Parc Taulí de Sabadell.",
@@ -348,7 +348,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 3",
     "type": "multiple",
     "question": "35. A què dóna resposta la Política mediambiental del Consorci Corporació Sanitària Parc Taulí de Sabadell?",
     "correct_answer": "A cap norma, es tracta només d’uns principis de bones pràctiques.",
@@ -360,7 +360,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 3",
     "type": "multiple",
     "question": "35. A què dóna resposta la Política mediambiental del Consorci Corporació Sanitària Parc Taulí de Sabadell?",
     "correct_answer": "A cap norma, es tracta només d’uns principis de bones pràctiques.",
@@ -422,7 +422,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 4",
     "type": "multiple",
     "question": "42. Què són les dades personals?",
     "correct_answer": "Qualsevol informació que permet identificar a una persona física.",
@@ -462,7 +462,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 3",
     "type": "multiple",
     "question": "46. Qui és, actualment, el delegat de protecció de dades del Consorci Corporació Sanitària Parc Taulí de Sabadell?",
     "correct_answer": "El Sr. Pablo Hernando Robles.",
@@ -472,7 +472,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 2",
     "type": "multiple",
     "question": "47. En matèria de prevenció de riscos laborals, és obligatori constituir un Comitè de Seguretat i Salut (CSS) en un consorci hospitalari?",
     "correct_answer": "Sí, és una obligació legal per empreses de 50 o més treballadors/es.",
@@ -482,7 +482,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 5",
     "type": "multiple",
     "question": "48. Quins són els riscos laborals més rellevants en els centres hospitalaris?",
     "correct_answer": "El risc per radiacions ionitzants, el risc químic, el risc biològic, el risc ergonòmic i el risc psicosocial.",
@@ -492,7 +492,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 5",
     "type": "multiple",
     "question": "49. Quina és la definició de prevenció, recollida l’article 4 de la LIei 31/1995, de 8 de novembre, de prevenció de riscos laborals?",
     "correct_answer": "La prevenció és el conjunt d’activitats o mesures, adoptades o previstes en totes les fases de l’activitat de l’empresa, amb la finalitat d’evitar o disminuir els riscos derivats del treball.",
@@ -502,7 +502,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 5",
     "type": "multiple",
     "question": "50. En matèria de prevenció de riscos laborals, què són els E.P.I.?",
     "correct_answer": "Són aquells equips, destinats a ser portats o subjectats per la persona treballadora, que tenen com a principal funció la de protegir la persona d’un o de diversos riscos presents en el seu lloc de treball.",
@@ -522,7 +522,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 5",
     "type": "multiple",
     "question": "52. En matèria de prevenció, què pretén la Llei 31/95, de 8 de novembre, de prevenció de riscos laborals?",
     "correct_answer": "Assegura la prestació pública i privada de la sanitat.",
@@ -532,7 +532,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 5",
     "type": "multiple",
     "question": "52. En matèria de prevenció, què pretén la Llei 31/95, de 8 de novembre, de prevenció de riscos laborals?",
     "correct_answer": "Assegura la prestació pública i privada de la sanitat.",
@@ -542,7 +542,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 2",
     "type": "multiple",
     "question": "54. A quin any es va crear l’Institut Català de la Salut i quines eren les seves funcions inicials?",
     "correct_answer": "A l’any 1983. Amb funció de prestació de serveis sanitaris públics i contractació de serveis amb altres Hospitals/Centres.",
@@ -552,7 +552,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 3",
     "type": "multiple",
     "question": "55. Es mantenen totes les entitats fundacionals del Consorci Corporació Sanitària Parc Taulí de Sabadell en l’actualitat?",
     "correct_answer": "No. Només queden 3 entitats fundacionals.",
@@ -582,7 +582,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 2",
     "type": "multiple",
     "question": "3) Quan l’article 43 CE parla de “Correspon als poders públics organitzar i tutelar la salut pública a través de mesures preventives i a través de les prestacions i dels serveis necessaris...” a què es refereix?",
     "correct_answer": "Als serveis sanitaris integrats en el Sistema Nacional de Salut.",
@@ -592,7 +592,17 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 2",
+    "type": "multiple",
+    "question": "4) Què hem d’entendre per Sistema Nacional de Salut (SNS)?",
+    "correct_answer": "La Constitució espanyola.",
+    "incorrect_answers": [
+      "És el nom amb el que es coneix al conjunt dels diferents Hospitals i els diferents centres d’assistència sanitària, centres diagnòstics, consultoris i que, siguin públics o privats, estiguin ubicats a Espanya.",
+      "El conjunt dels diferents dispositius de salut existents a Espanya als que poden acudir els ciutadans amb independència de la seva titularitat pública o privada amb o sense ànim de lucre, presentant la seva targeta sanitària o pagant-los directament."
+    ]
+  },
+  {
+    "category": "Tema 2",
     "type": "multiple",
     "question": "4) Què hem d’entendre per Sistema Nacional de Salut (SNS)?",
     "correct_answer": "La Constitució espanyola.",
@@ -604,16 +614,6 @@ let Questions = [
   {
     "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
     "type": "multiple",
-    "question": "4) Què hem d’entendre per Sistema Nacional de Salut (SNS)?",
-    "correct_answer": "La Constitució espanyola.",
-    "incorrect_answers": [
-      "És el nom amb el que es coneix al conjunt dels diferents Hospitals i els diferents centres d’assistència sanitària, centres diagnòstics, consultoris i que, siguin públics o privats, estiguin ubicats a Espanya.",
-      "El conjunt dels diferents dispositius de salut existents a Espanya als que poden acudir els ciutadans amb independència de la seva titularitat pública o privada amb o sense ànim de lucre, presentant la seva targeta sanitària o pagant-los directament."
-    ]
-  },
-  {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
-    "type": "multiple",
     "question": "6) Què és un dret fonamental?",
     "correct_answer": "han d’ésser publicats en el Boletín Oficial del Estado. Aquesta publicació és suficient, a tots els efectes, per a l’eficàcia dels actes i per a l’entrada en vigor de les disposicions generals i les normes.",
     "incorrect_answers": [
@@ -702,7 +702,7 @@ let Questions = [
     ]
   },
   {
-    "category": "PREGUNTES DE CONEIXEMENTS GENERALS",
+    "category": "Tema 1",
     "type": "multiple",
     "question": "15) Què hem d’entendre per legislació bàsica en termes constitucionals?",
     "correct_answer": "És aquella que amb aquest caràcter es reserva l’Estat com a competència exclusiva d’acord amb l’article 149 de la CE, sense perjudici que les Comunitats Autònomes puguin regular els aspectes accessoris que determina la pròpia carta magna o la norma bàsica que es dicti.",
