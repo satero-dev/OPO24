@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="Questions_Complete.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="panel">
+        <h1>Quiz Application</h1>
+        <div id="setup">
+            <label for="numQuestions">Selecciona el número de preguntas:</label>
+            <input type="number" id="numQuestions" min="1" max="73" value="10">
+            <button onclick="startQuiz()">Iniciar Quiz</button>
+        </div>
+        <div id="quiz" style="display: none;">
+            <div class="timer" id="timer">Tiempo: 00:00</div>
+            <div class="progress" id="progress">Progreso: 0 / 0</div>
+            <div class="question" id="ques"></div>
+            <div class="options" id="opt"></div>
+            <button onclick="prevQuestion()" id="prevBtn" style="display: none;">Atrás</button>
+            <button onclick="nextQuestion()" id="nextBtn">Siguiente</button>
+            <div id="score"></div>
+        </div>
+    </div>
+</body>
+
+</html>
