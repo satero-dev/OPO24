@@ -56,7 +56,7 @@ function getThemeName(theme) {
     case "Tema 5":
       return "Normativa de Prevenció de Riscos Laborals";
     case "allThemes":
-      return "Todos los temas";
+      return "Tots els temes";
     default:
       return "Test Oposicions 2024";
   }
@@ -147,16 +147,16 @@ function endQuiz() {
   document.getElementById("timer").remove();
   document.getElementById(
     "score"
-  ).textContent = `Puntuación: ${score} de ${totalQuestions}`;
+  ).textContent = `Puntuació: ${score} de ${totalQuestions}`;
 }
 
 function updateProgress() {
-  progress.textContent = `Progreso: ${currQuestion + 1} / ${totalQuestions}`;
+  progress.textContent = `Progrés: ${currQuestion + 1} / ${totalQuestions}`;
 }
 
 function updateTimer() {
   timeElapsed++;
   const minutes = String(Math.floor(timeElapsed / 60)).padStart(2, "0");
   const seconds = String(timeElapsed % 60).padStart(2, "0");
-  timer.textContent = `Tiempo: ${minutes}:${seconds}`;
+  timer.textContent = `Temps: ${minutes}:${seconds}`;
 }
